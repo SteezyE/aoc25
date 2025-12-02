@@ -19,14 +19,14 @@ int main()
 {
   uint16_t rotations, position = START;
   char direction;
-  uint16_t zero_counts = 0; 
+  uint16_t zero_counts = 0;
   while(scanf(" %c%hu", &direction, &rotations) == 2)
   {
       switch(direction)
       {
         case LEFT:
           zero_counts += MAX(0, (rotations - position) / MOD + (rotations >= position && position));
-          position = (position + BIAS - rotations) % MOD; 
+          position = (position + BIAS - rotations) % MOD;
           break;
         case RIGHT:
           zero_counts += rotations / MOD + (rotations % MOD + position >= MOD);

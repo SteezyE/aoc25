@@ -10,4 +10,4 @@ all: $(TARGETS)
 
 .PHONY: clean
 clean:
-	rm $(TARGETS) 
+	rm $(TARGETS)
