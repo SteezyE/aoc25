@@ -10,8 +10,7 @@ int main()
 {
   char s[255];
   uint8_t i, j, n;
-  uint64_t dp[255][M+1], factor;
-  uint64_t res = 0;
+  uint64_t dp[255][M+1], factor, res = 0;
   while(scanf(" %s", s) == 1)
   {
     n = strlen(s);
