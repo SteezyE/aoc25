@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall
 
-TARGETS = a
+TARGETS = a b
 
 all: $(TARGETS)
 
